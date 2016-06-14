@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<form action="">
+<label for="some_text">Print some text</label><input type="text" id="some_text"/>
+  <br />
+<input type="submit" id="button" />
+</form>
+
+	<script>
+var submit = document.getElementById('submit');
+submit.onclick = function Check (){
+  var val = document.getElementById('validate_me').value;
+  //var reg = /\(\d{3}\)\-\d{5}/;
+  if (val.match(/\(\d{3}\)\-\d{3}\-\d{4}/g)) {
+    alert("everything is ok");
+  }
+  else {
+    alert ('number is worng');
+  }
+}
+	</script>
+</body>
+</html>

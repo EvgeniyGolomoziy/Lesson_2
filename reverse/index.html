@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+<label for="some_text">Print some text</label><input type="text" id="some_text"/>
+  <br />
+<input type="submit" id="button" />
+</form>
+<script>
+var button = document.getElementById("button");
+button.onclick = 
+function Reverse() {
+  var str = document.getElementById('some_text').value;
+  if (str.length==0) {
+    alert ('The field is empty. Nothing to reverse');
+  }
+  else if (str.length==1) {
+    alert ('Please, print one more symbol to reverse')
+  }
+  else {
+  var reversed = str.split('').reverse().join('');
+  alert ('the reversed text is: '+ reversed)
+; 
+  }
+}
+</script>
+</body>
+</html>
